@@ -1,0 +1,46 @@
+{
+  "entities": {
+    "users": {
+      "title": "User Profiles",
+      "description": "User account documents stored at /users/{userId}",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "email": { "type": "string" },
+        "avatarUrl": { "type": "string" },
+        "provider": { "type": "string" },
+        "createdAt": { "type": "string" },
+        "preferences": { "type": "object" },
+        "updatedAt": { "type": "string" }
+      },
+      "required": ["id", "email"]
+    },
+    "projects": {
+      "title": "Venture Projects",
+      "description": "Independent brand projects stored at /projects/{projectId}",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "ownerId": { "type": "string" },
+        "projectType": { "type": "string" },
+        "brandCategory": { "type": "string" },
+        "title": { "type": "string" },
+        "tagline": { "type": "string" },
+        "createdAt": { "type": "string" },
+        "updatedAt": { "type": "string" },
+        "rawIdea": { "type": "string" },
+        "isArchived": { "type": "boolean" },
+        "questionnaire": { "type": "object" },
+        "understanding": { "type": "object" },
+        "researchDiscovery": { "type": "object" },
+        "brandStrategy": { "type": "object" },
+        "designStudio": { "type": "object" },
+        "marketLaunch": { "type": "object" },
+        "brandKit": { "type": "object" },
+        "decisionHistory": { "type": "array" }
+      },
+      "required": ["id", "ownerId", "title", "createdAt", "updatedAt"]
+    }
+  }
+}
