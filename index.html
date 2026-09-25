@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stratum Brand Intelligence</title>
+    <meta name="description" content="One Product. One Core Value. Multiple Audiences. Intelligently Adapted." />
+    <meta property="og:title" content="Stratum Brand Intelligence" />
+    <meta property="og:description" content="One Product. One Core Value. Multiple Audiences. Intelligently Adapted." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+      (function() {
+        try {
+          var saved = localStorage.getItem('stratum_theme');
+          // Default to light mode; only activate dark if explicitly chosen by user
+          var isDark = saved === 'dark';
+          if (isDark) {
+            document.documentElement.classList.add('dark');
+            document.documentElement.style.colorScheme = 'dark';
+          } else {
+            document.documentElement.classList.remove('dark');
+            document.documentElement.style.colorScheme = 'light';
+          }
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body class="bg-[#F1EEE4] text-neutral-900 dark:bg-[#121212] dark:text-[#F5F3EC] antialiased selection:bg-[#FF6124] selection:text-white transition-colors duration-200">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
